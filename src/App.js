@@ -213,10 +213,6 @@ function App(props) {
   }, [handleFocus]);
 
   return (
-    <div>hello</div>
-  )
-
-  return (
     <Router>
       <div className="App">
         <div className="App-menu-container">
