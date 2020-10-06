@@ -24,6 +24,7 @@ function Home(props) {
           focusKey="button-2" 
           text={'Go to About'} 
           handleClick={() => {
+            console.log('xxx handle click');
             history.push("/about");
           }}
         />

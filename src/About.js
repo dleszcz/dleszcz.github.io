@@ -21,10 +21,7 @@ function About(props) {
           text={'Back'} 
           handleClick={() => {
             history.push("/");
-          }} 
-          onEnterPress={() => {
-            history.push("/");
-          }} 
+          }}
         />
         <Button focusKey="button-about-1" text={'Home button 1'} />
         { GRIDS_3.map(grid => (
@@ -34,11 +31,9 @@ function About(props) {
           focusKey="button-about-2" 
           text={'Go to Home'} 
           handleClick={() => {
+            console.log('xxx handle click');
             history.push("/");
-          }} 
-          onEnterPress={() => {
-            history.push("/");
-          }} 
+          }}
         />
         <Button focusKey="button-about-3" disabled text={'Home disabled btn'} />
         { GRIDS_2.map(grid => (

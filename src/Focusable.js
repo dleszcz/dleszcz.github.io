@@ -13,7 +13,7 @@ const isElementInViewport = (el) => {
 }
 
 const Focusable = (props) => {
-  const { children, focused, disabled, Component } = props;
+  const { children, focused, disabled, Component, onClick } = props;
   const itemRef = useRef();
   console.log('xxx render Focusable')
 
@@ -33,6 +33,7 @@ const Focusable = (props) => {
       ref={itemRef}
       focused={focused}
       disabled={disabled}
+      onClick={onClick}
     >
       {children}
     </Component>
@@ -47,7 +48,7 @@ const FocusableWrapper = (props) => {
       {...props}
       focusable={!props.disabled}
       onClick={props.handleClick}
-      // onEnterPress={props.handleClick}
+      onEnterPress={props.handleClick}
       // onArrowPress={props.onArrowPress}
       // onBecameFocused={props.onItemFocused}
       // onBecameBlurred={props.onItemBlurred}

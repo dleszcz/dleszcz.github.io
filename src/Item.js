@@ -27,6 +27,8 @@ function Item({id, focused, setFocus}) {
     }
   }, [focused]);
 
+  console.log('xxx render Item', id);
+
   return (
     <div 
       className="Item"
